@@ -15,16 +15,19 @@
     <%= stylesheet_link_tag "application", :media => "all" %>
   </head>
   <body>
+	
+	  <style>
+		  .form-inline {
+			  margin:0
+		  }
+	</style>
 
-
-    <div class="container-fluid">
-      <div class="row-fluid">
+      <div class="row-fluid alert alert-notice" style="text-align:center">
 		<div class="span12">
           <%= yield %>
         </div>
       </div><!--/row-->
 
-    </div> <!-- /container -->
 
     <!-- Javascripts
     ================================================== -->

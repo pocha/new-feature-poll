@@ -1,7 +1,6 @@
-<p>Thank you</p>
-<p>Any feedback you have on the feature (optional)</p>
-<%= form_for @result, :url => thankyou_poll_path(@poll.id) do |f| %>
+<span class="text-success" >Thank you. </span><span style="color:black">Any feedback you have on the feature (optional)</span></br>
+<%= form_for @result, :url => thankyou_poll_path(@poll.id), :html => {:class => "form-inline", :style => "margin-bottom:1px;"} do |f| %>
 	<%= f.hidden_field :id  %>
-	<%= f.text_area :feedback %>
-	<%= f.submit "Submit" %>
+	<%= f.text_area :feedback, :style => "width:60%; height: 20px" %>
+	<%= f.submit "Submit", :class => 'btn btn-primary' %>
 <% end %>

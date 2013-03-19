@@ -14,7 +14,7 @@
 
     <%= stylesheet_link_tag "application", :media => "all" %>
   </head>
-  <body>
+  <body style="overflow:hidden; height: 51px;">
 	
 	  <style>
 		  .form-inline {
@@ -22,7 +22,7 @@
 		  }
 	</style>
 
-      <div class="row-fluid alert alert-notice" style="text-align:center">
+      <div class="row-fluid alert alert-notice" style="text-align:center; height:100%">
 		<div class="span12">
           <%= yield %>
         </div>

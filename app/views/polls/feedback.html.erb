@@ -1,0 +1,7 @@
+<p>Thank you</p>
+<p>Any feedback you have on the feature (optional)</p>
+<%= form_for @result, :url => thankyou_poll_path(@poll.id) do |f| %>
+	<%= f.hidden_field :id  %>
+	<%= f.text_area :feedback %>
+	<%= f.submit "Submit" %>
+<% end %>

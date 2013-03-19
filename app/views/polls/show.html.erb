@@ -1,0 +1,4 @@
+<p><%= @poll.question %></p>
+<% @poll.fields.all.each do |field| %>
+	<%= link_to field.content, feedback_poll_path(@poll.id,field.id), :id => field.id %> 
+<% end %>
